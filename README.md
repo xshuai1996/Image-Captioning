@@ -1,34 +1,23 @@
-# PixelHop++
+# Image Captioning
 
-This project is an unofficial implementation of the paper [*PixelHop++: A Small Successive-Subspace-Learning-Based (SSL-based) Model for Image Classification*](https://arxiv.org/abs/2002.03141), a feed-forward image classification architecture based on purely traditional machine learning methods.
+This project is an unofficial implementation of the paper [*Show and Tell: A Neural Image Caption Generator*](https://arxiv.org/abs/1411.4555), which generate captioning for input images with resNet50 as the encoder, LSTM as the decoder, and sampling / beam search as 2 different prediction methods. 
 
-## Related works
-This work is similar to the previous paper [*SSL (Successive Subspace Learning)*](https://arxiv.org/abs/1909.08190), which is a new machine learning methodology containing 4 key components: successive near-to-far neighborhood expansion, unsupervised dimension reduction via subspace approximation, supervised dimension reduction via label-assisted regression (LAG), and feature concatenation and decision making. The only differece here is it introduces the tree decomposition to make it more memory efficient.
-For more intuition and mathematical explanation about the Saab transformation, read [*Interpretable Convolutional Neural Networks via Feedforward Design*](https://arxiv.org/abs/1810.02786).
-
- 
 ## Experiment results
-Parameter setting of module 1
-![image](https://raw.githubusercontent.com/xshuai1996/PixelHopPlusPlus/master/results/params1.png)
+![image](results/1.jpg)
+![image](results/2.jpg)
+![image](results/3.jpg)
+![image](results/4.jpg)
+![image](results/5.jpg)
+![image](results/6.jpg)
+![image](results/7.jpg)
+![image](results/8.jpg)
+![image](results/9.jpg)
+![image](results/0.jpg)
+![image](results/11.jpg)
+![image](results/12.jpg)
+![image](results/13.jpg)
+![image](results/14.jpg)
+![image](results/15.jpg)
+![image](results/16.jpg)
+![image](results/17.jpg)
 
-Parameter setting of module 2
-![image](https://raw.githubusercontent.com/xshuai1996/PixelHopPlusPlus/master/results/params2.png)
-
-Parameter setting of module 3
-![image](https://raw.githubusercontent.com/xshuai1996/PixelHopPlusPlus/master/results/params3.png)
-
-Number of parameters in module 1
-![image](https://raw.githubusercontent.com/xshuai1996/PixelHopPlusPlus/master/results/num_params1.png)
-
-Number of parameters in module 2
-![image](https://raw.githubusercontent.com/xshuai1996/PixelHopPlusPlus/master/results/num_params2.png)
-
-Running time
-![image](https://raw.githubusercontent.com/xshuai1996/PixelHopPlusPlus/master/results/time.png)
-
-Accuracy
-![image](https://raw.githubusercontent.com/xshuai1996/PixelHopPlusPlus/master/results/acc1.png)
-![image](https://raw.githubusercontent.com/xshuai1996/PixelHopPlusPlus/master/results/acc2.png)
-
-Confusion matrix acrossing different classes
-![image](https://raw.githubusercontent.com/xshuai1996/PixelHopPlusPlus/master/results/acc3.png)
