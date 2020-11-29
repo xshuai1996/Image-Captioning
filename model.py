@@ -81,7 +81,7 @@ class Decoder(nn.Module):
                         if len(score_heap) < num_candidates:    # when heap is not full, push
                             heapq.heappush(score_heap, (score, i))
                         elif score > score_heap[0][0]:          # if it's full, only push when it has a higher score than top of min-heap
-                            heapq.heapreplace(score_heap, (score, i))
+                            heapq.heappushpop(score_heap, (score, i))
 
                     for score, i in score_heap:
                         if len(scores_id) < num_candidates:
